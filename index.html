@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculator-App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator-App</h1>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" name="" id="user-input" value="0" readonly>
+            </div>
+            <div class="calc-keys">
+                <button type="button" class="key-others operations" onclick="performOperation('+')">+</button>
+                <button type="button" class="key-others operations" onclick="performOperation('-')">-</button>
+                <button type="button" class="key-others operations" onclick="performOperation('*')">x</button>
+                <button type="button" class="key-others operations" onclick="performOperation('/')">&#247;</button>
+                <button type="button" class="numbers" onclick="appendNumber('7')">7</button>
+                <button type="button" class="numbers" onclick="appendNumber('8')">8</button>
+                <button type="button" class="numbers" onclick="appendNumber('9')">9</button>
+                <button type="button" class="key-operate operations" onclick="calculateResult('=')">=</button>
+                <button type="button" class="numbers" onclick="appendNumber('4')">4</button>
+                <button type="button" class="numbers" onclick="appendNumber('5')">5</button>
+                <button type="button" class="numbers" onclick="appendNumber('6')">6</button>
+                <button type="button" class="numbers" onclick="appendNumber('1')">1</button>
+                <button type="button" class="numbers" onclick="appendNumber('2')">2</button>
+                <button type="button" class="numbers" onclick="appendNumber('3')">3</button>
+                <button type="button" class="key-zero numbers" onclick="appendNumber('0')">0</button>
+                <button type="button" class="numbers" onclick="appendNumber('.')">.</button>
+                <button type="button" class="key-clr" onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
