@@ -14,9 +14,6 @@ function appendNumber(value) {
 
 function clearDisplay() {
   displayValue = "";
-  firstOperand = "";
-  secondOperand = "";
-  operator = "";
   userInput.value = displayValue;
 }
 
